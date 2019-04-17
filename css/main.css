@@ -515,9 +515,6 @@ code {
   border-radius: 3px;
   font-size: 14px;
 }
-pre {
-  padding: 10px;
-}
 pre code {
   padding: 0;
   color: #4d4d4c;
@@ -1775,7 +1772,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffffc3;
+  background: #a64626;
 }
 .feed-link,
 .chat {
@@ -2966,4 +2963,13 @@ ul.breadcrumb li+li:last-child {
   .pagination {
     margin: 8px 0 0;
   }
+}
+.post-toc .nav .nav-child {
+  display: block;
+}
+.post-toc ol {
+  font-size: 13px;
+}
+toc:enable: true {
+  wrap: true;
 }

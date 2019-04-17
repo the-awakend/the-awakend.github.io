@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/css/main.css?v=7.1.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/thumbnail.jpg?v=7.1.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/thumbnail.jpg?v=7.1.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/thumbnail.jpg?v=7.1.0">
+
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.1.0',
+    sidebar: {"position":"right","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="Markdown语法整理：Markdown是一门比html更简单的标记语言，其主要用于日常写作,最终通过相应的编辑器或者脚本转换成html用于页面渲染。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Markdown语法整理">
+<meta property="og:url" content="http://yoursite.com/2019/04/17/first-blog/index.html">
+<meta property="og:site_name" content="L...的个人博客">
+<meta property="og:description" content="Markdown语法整理：Markdown是一门比html更简单的标记语言，其主要用于日常写作,最终通过相应的编辑器或者脚本转换成html用于页面渲染。">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://img-blog.csdn.net/20151129213701642">
+<meta property="og:image" content="https://img-blog.csdn.net/20151129213701642">
+<meta property="og:image" content="http://25.io/mou/Mou_128.png">
+<meta property="og:image" content="http://25.io/mou/Mou_128.png =200x300">
+<meta property="og:image" content="http://25.io/mou/Mou_128.png =200x">
+<meta property="og:updated_time" content="2019-04-16T19:06:10.957Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Markdown语法整理">
+<meta name="twitter:description" content="Markdown语法整理：Markdown是一门比html更简单的标记语言，其主要用于日常写作,最终通过相应的编辑器或者脚本转换成html用于页面渲染。">
+<meta name="twitter:image" content="https://img-blog.csdn.net/20151129213701642">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="L...的个人博客" type="application/atom+xml">
+
+
+
+  
+  
+  <link rel="canonical" href="http://yoursite.com/2019/04/17/first-blog/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Markdown语法整理 | L...的个人博客</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">L...的个人博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home                          //首页"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive          //归档"></i> <br>归档</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th           //分类"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags                     //标签"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user                   //关于"></i> <br>关于</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+    
+  
+  
+
+  
+
+  <article class="post post-type-normal true" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/17/first-blog/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="L...">
+      <meta itemprop="description" content="用以记录随笔和学习总结">
+      <meta itemprop="image" content="/images/header1.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="L...的个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Markdown语法整理
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-04-17 00:51:43 / 修改时间：03:06:10" itemprop="dateCreated datePublished" datetime="2019-04-17T00:51:43+08:00">2019-04-17</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="Markdown语法整理："><a href="#Markdown语法整理：" class="headerlink" title="Markdown语法整理："></a>Markdown语法整理：</h2><p>Markdown是一门比html更简单的标记语言，其主要用于日常写作,最终通过相应的编辑器或者脚本转换成html用于页面渲染。<a id="more"></a>由于markdown基础语法的限制，出现了一些加强版的语法设计，如下文提到的markdown plus。不同的写作工具或平台采用的标准不一样，可能会有一些语法差异。</p>
+<h3 id="1、标题-Headers"><a href="#1、标题-Headers" class="headerlink" title="1、标题 Headers"></a>1、标题 Headers</h3><p>​    几级标题就使用几个”#”，最多支持六级标题，注意 # 和文字中间的空格不可缺</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span>
+<span class="line">2</span>
+<span class="line">3</span>
+</pre></td><td class="code"><pre><span class="line"># this is a &lt;h1&gt; tag（一级标题）</span>
+<span class="line">## This is an &lt;h2&gt; tag（二级标题）</span>
+<span class="line">###### This is an &lt;h6&gt; tag（六级标题）</span>
+</pre></td></tr></table></figure>
+<h3 id="2、强调-Emphasis"><a href="#2、强调-Emphasis" class="headerlink" title="2、强调 Emphasis"></a>2、强调 Emphasis</h3><p>​    通过在文字两侧加入星号 (*)或者下划线(_)或者波浪线(~)来实现文本的强调，注意符号和文本之间没有空格</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span>
+<span class="line">2</span>
+<span class="line">3</span>
+<span class="line">4</span>
+</pre></td><td class="code"><pre><span class="line">*斜体 italic* 或者 _斜体 italic_</span>
+<span class="line">**粗体 bold** 或者 _粗体 bold_</span>
+<span class="line">~~删除线~~</span>
+<span class="line">以上格式可以混合使用</span>
+</pre></td></tr></table></figure>
+<h3 id="3、列表-List"><a href="#3、列表-List" class="headerlink" title="3、列表 List"></a>3、列表 List</h3><p>列表项目标记通常是放在最左边，但是其实也可以缩进，在创造嵌套列表时，如果在一级列表下要添加二级列表、引用或者段落、代码块等，需要在下一行使用制表符Tab。</p>
+<p><strong>1) 无序列表 unordered list</strong></p>
+<p>无序列表使用 - + * 任何一种单字符都可以，注意符号和文本之间有空格</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span>
+<span class="line">2</span>
+<span class="line">3</span>
+<span class="line">4</span>
+</pre></td><td class="code"><pre><span class="line">* item 1</span>
+<span class="line">* item 2</span>
+<span class="line">	* item2a</span>
+<span class="line">	* item2b</span>
+</pre></td></tr></table></figure>
+<p><strong>2) 顺序列表 ordered list</strong></p>
+<p>使用阿拉伯数字加点号的方式，注意数字和点号之间没有空格，而点号和文本之间有空格</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span>
+<span class="line">2</span>
+<span class="line">3</span>
+<span class="line">4</span>
+<span class="line">5</span>
+</pre></td><td class="code"><pre><span class="line">1. item1</span>
+<span class="line">2. item2</span>
+<span class="line">	* item2a</span>
+<span class="line">	* item2b</span>
+<span class="line">3. item3</span>
+</pre></td></tr></table></figure>
+<p><strong>4) 使用HTML格式插入列表，markdown的格式是可以转换成HTML的，不止是列表，其他的一切元素比如图像、链接的插入，你都可以使用HTML的格式来写作，这是完全允许的，直接再文章中写就行。</strong></p>
+<p>比如：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span>
+<span class="line">2</span>
+<span class="line">3</span>
+<span class="line">4</span>
+<span class="line">5</span>
+<span class="line">6</span>
+<span class="line">7</span>
+<span class="line">8</span>
+<span class="line">9</span>
+<span class="line">10</span>
+</pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Ol</span>&gt;</span></span>
+<span class="line">	<span class="tag">&lt;<span class="name">li</span>&gt;</span> item1 <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span>
+<span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span> item2 <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span>
+<span class="line">    <span class="tag">&lt;<span class="name">ul</span>&gt;</span></span>
+<span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span> item2a <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span>
+<span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span> item2b <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span>
+<span class="line">    <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span>
+<span class="line"></span>
+<span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span> item3 <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span>
+<span class="line"><span class="tag">&lt;<span class="name">ol</span>&gt;</span></span>
+</pre></td></tr></table></figure>
+<p>显示效果如下：</p>
+<ol><br>    <li> item1 </li><br>    <li> item2 </li><br>    <ul><br>        <li> item2a </li><br>        <li> item2b </li><br>    </ul><br>    <li> item 3</li><br></ol>
+
+<p>这和我们直接使用Markdown语法是完全一样的。</p>
+<h3 id="3、引用"><a href="#3、引用" class="headerlink" title="3、引用"></a>3、引用</h3><p>再引用区块内，可以使用其他的markdown语法元素，包括标题、列表、代码块等</p>
+<p>3.1 普通引用</p>
+<p>引用的内容可以使用 &gt; 来表示，符号和文本之间可以有空格也可以没有</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span>
+</pre></td><td class="code"><pre><span class="line">&gt; 秦时明月</span>
+</pre></td></tr></table></figure>
+<p>3.2.嵌套引用</p>
+<p>在当前引用层再加上 ‘&gt;’ 即可，示例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span>
+<span class="line">2</span>
+<span class="line">3</span>
+</pre></td><td class="code"><pre><span class="line">&gt; 得到了不该得到的，就会失去不该失去的</span>
+<span class="line">	&gt; 星星为什么这么渺小? 那是因为他们把自己放的太高了</span>
+<span class="line">		&gt; 天下皆白，唯我独黑，非攻墨门，兼爱平生</span>
+</pre></td></tr></table></figure>
+<p>预览效果：</p>
+<blockquote>
+<p>得到了不该得到的，就会失去不该失去的</p>
+<blockquote>
+<p>星星为什么这么渺小? 那是因为他们把自己放的太高了</p>
+<blockquote>
+<p>天下皆白，唯我独黑，非攻墨门，简爱平生</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h3 id="4、代码块-code"><a href="#4、代码块-code" class="headerlink" title="4、代码块 code"></a>4、代码块 code</h3><ul>
+<li><p>行内代码</p>
+<p>用一个反引号将代码包裹 ( ` ) 包起来，空格随意</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span>
+</pre></td><td class="code"><pre><span class="line">` print &apos;hello world&apos; `</span>
+</pre></td></tr></table></figure>
+</li>
+<li><p>代码块</p>
+</li>
+<li><p>连用三个反引号将代码包起来 ( ``` )，注意当输入左边的三个反引号后，换行才能显示代码块,本文中所有的示例都是用的代码块书写</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span>
+<span class="line">2</span>
+</pre></td><td class="code"><pre><span class="line">def f(x):</span>
+<span class="line">	return x**2 + x**(1/2)</span>
+</pre></td></tr></table></figure>
+</li>
+<li><p>可以使用不同语言来生成代码，如：javascript代码，在typora中生成代码块后会自动提示</p>
+<blockquote>
+<p>```javascript</p>
+<p>​    var num = 0</p>
+<p>​    for (var i = 0; i &lt; 5; i++) {</p>
+<p>​        num+=i;</p>
+<p>​    }</p>
+<p>​    console.log(num);</p>
+<p>```</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="5、分割线-horizontal-rules"><a href="#5、分割线-horizontal-rules" class="headerlink" title="5、分割线 horizontal rules"></a>5、分割线 horizontal rules</h3><p>三个或者三个以上的 - 或者 * 就可以实现分割线的效果，效果如下</p>
+<h3 id="6、插入表格-table"><a href="#6、插入表格-table" class="headerlink" title="6、插入表格 table"></a>6、插入表格 table</h3><p>按照如下语法画出表格的形状即可，在编辑代码时不需要考虑对齐（但是为了美观和逻辑的直观，建议代码整齐）。竖线 ( | ) 用来分栏，短横线 ( - ) 用来分割表头和其他部分，冒号( : )用于标记表格内容的对齐方式，默认左对齐。所有符号之间的空格会被忽略，不影响布局。表格的语句上一行必须为空行，不然表格不生效。但是在Typora等一些工具中会自动补全。例如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span>
+<span class="line">2</span>
+<span class="line">3</span>
+<span class="line">4</span>
+</pre></td><td class="code"><pre><span class="line">| 左对齐标题 | 右对齐标题 | 居中标题 |</span>
+<span class="line">| :----- 	| -----:	| :-----: |</span>
+<span class="line">| 老板啊，蛋炒饭 ! 好嘞，来咯| 七块钱，不用找 |</span>
+<span class="line">| 老板啊，再涨点| 能干干，不能滚 | 好嘞，了解 |</span>
+</pre></td></tr></table></figure>
+<p><strong>效果如下：</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">左对齐标题</th>
+<th style="text-align:right">右对齐标题</th>
+<th style="text-align:center">居中标题</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">老板啊，蛋炒饭</td>
+<td style="text-align:right">好嘞，来咯</td>
+<td style="text-align:center">七块钱，不用找</td>
+</tr>
+<tr>
+<td style="text-align:left">老板啊，再涨点</td>
+<td style="text-align:right">能干干，不能滚</td>
+<td style="text-align:center">好嘞，了解</td>
+</tr>
+</tbody>
+</table>
+<p>这里有个<a href="https://www.tablesgenerator.com/markdown_tables" title="title" target="_blank" rel="noopener">神奇网站</a>，可以自动生成你想要的表格代码，以及HTML和LaTex代码</p>
+<p><strong>或者使用HTML写作：</strong></p>
+<blockquote>
+<p>\&lt;table><br>    <tr><br>        <th rowspan="2">值班人员</th><br>        <th>星期一</th><br>        <th>星期二</th><br>        <th>星期三</th><br>    </tr><br>    <tr><br>        <td>小明</td><br>        <td>小红</td><br>        <td>小虎</td><br>    </tr><br>\&lt;/table></p>
+</blockquote>
+<p><strong>效果：</strong></p>
+<table><br>    <caption>值日表</caption><br>    <tr><br>        <th>星期一</th><br>        <th>星期二</th><br>        <th>星期三</th><br>    </tr><br>    <tr><br>        <td>小明</td><br>        <td>小红</td><br>        <td>小虎</td><br>    </tr><br></table>
+
+<h3 id="7、插入图像"><a href="#7、插入图像" class="headerlink" title="7、插入图像"></a>7、插入图像</h3><p>用 <strong>![图片名](图片地址 “标题”)</strong> 来插入图片， 标题为可选项，它是当鼠标悬浮在图片时所显示的文本。在typora中可以直接拖拽本地图片到编辑器中。</p>
+<ul>
+<li><p>行内式：</p>
+<p>语法说明： ![图片](“图片地址 Title”)，示例</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span>
+</pre></td><td class="code"><pre><span class="line">![happy coding](https://github.com/the-awakend/photos/blob/master/timg.jpg &quot;Scarlett Johansson&quot;)</span>
+</pre></td></tr></table></figure>
+<p>显示效果：</p>
+<p>! <a href="https://github.com/the-awakend/photos/blob/master/timg.jpg" title="Scarlett Johansson" target="_blank" rel="noopener">happy coding</a></p>
+</li>
+<li><p>参考式:</p>
+<p>在文档中要插入图片的地方，写 ![图片名][title]</p>
+<p>在文档的最后写上[title]:图片地址 “ 图片名”</p>
+<p>示例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span>
+<span class="line">2</span>
+<span class="line">3</span>
+<span class="line">4</span>
+</pre></td><td class="code"><pre><span class="line">![happy coding][Scarlett Johansson]</span>
+<span class="line">......文本内容......</span>
+<span class="line">......文本内容......</span>
+<span class="line">[Scarlett Johansson]:https://github.com/the-awakend/photos/blob/master/timg.jpg  &quot;Scarlett Johansson&quot;</span>
+</pre></td></tr></table></figure>
+<p>显示效果：</p>
+<p>![happy coding][Scarlett Johansson]  </p>
+</li>
+</ul>
+<h4 id="另外关于图像插入："><a href="#另外关于图像插入：" class="headerlink" title="另外关于图像插入："></a>另外关于图像插入：</h4><ol>
+<li>可以插入在线图片或者本地图片，注意在使用jupyter lab的时候，图片必须放在当前文件夹或当前文件夹的子文件夹下</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span>
+<span class="line">2</span>
+</pre></td><td class="code"><pre><span class="line">![Github](url &quot;title&quot;)（添加在线图片）</span>
+<span class="line">![Github](/images/logo.png &quot;title&quot;)（添加本地图片）</span>
+</pre></td></tr></table></figure>
+<ol start="2">
+<li><p>直接插入的图片，会自动靠在左侧，大小也无法由自己决定  </p>
+<p>我们可以使用类似HTML标签属性设置的方法来设置图片大小，</p>
+<ul>
+<li><p>按照像素大小设置，直接插入一下代码，显示效果如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span>
+</pre></td><td class="code"><pre><span class="line">&lt;img src=&quot;https://img-blog.csdn.net/20151129213701642&quot; width=50 height=50/&gt;</span>
+</pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ol>
+<pre><code>&lt;img src=&quot;https://img-blog.csdn.net/20151129213701642&quot; width=256 height=256 /&gt;
+</code></pre><ul>
+<li><p>按照一定比例显示，图在下面(反正就是可以按照HTML的语法来)：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span>
+</pre></td><td class="code"><pre><span class="line">&lt;img src=&quot;https://img-blog.csdn.net/20151129213701642&quot; width=&quot;50%&quot; height=&quot;50%&quot; /&gt;</span>
+</pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdn.net/20151129213701642" width="50%" height="50%"></p>
+</li>
+<li><p>给图像加个标注，显示如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span>
+<span class="line">2</span>
+<span class="line">3</span>
+<span class="line">4</span>
+</pre></td><td class="code"><pre><span class="line">&lt;center&gt;</span>
+<span class="line">&lt;img src=&quot;https://img-blog.csdn.net/20151129213701642&quot; width=&quot;25%&quot; height=&quot;25%&quot; /&gt;</span>
+<span class="line">Figure 1. Lena</span>
+<span class="line">&lt;/center&gt;</span>
+</pre></td></tr></table></figure>
+<center><br><img src="https://img-blog.csdn.net/20151129213701642" width="25%" height="25%"><br>Figure 1. Lena<br></center>
+
+</li>
+</ul>
+<p>使用Mou编辑器语法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span>
+</pre></td><td class="code"><pre><span class="line">![Mou icon](http://25.io/mou/Mou_128.png)</span>
+</pre></td></tr></table></figure>
+<ul>
+<li>原图：</li>
+</ul>
+<p><img src="http://25.io/mou/Mou_128.png" alt="Mou icon"></p>
+<ul>
+<li><p>更改大小(不知道为啥显示不出来)：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span>
+</pre></td><td class="code"><pre><span class="line">![Mou icon](http://25.io/mou/Mou_128.png =200x300)</span>
+</pre></td></tr></table></figure>
+<p><img src="http://25.io/mou/Mou_128.png =200x300" alt="Mou icon"></p>
+<p>或者：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span>
+</pre></td><td class="code"><pre><span class="line">![Mou icon](http://25.io/mou/Mou_128.png =200x)</span>
+</pre></td></tr></table></figure>
+<p><img src="http://25.io/mou/Mou_128.png =200x" alt="Mou icon"></p>
+</li>
+</ul>
+<h3 id="7、插入超链接"><a href="#7、插入超链接" class="headerlink" title="7、插入超链接"></a>7、插入超链接</h3><p>Markdown 支持两种形式的链接语法： 行内式和参考式两种形式，行内式一般使用较多。</p>
+<ul>
+<li><p>行内式:</p>
+<p>使用[链接文字][链接地址 “链接标题”]的方式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span>
+<span class="line">2</span>
+<span class="line">3</span>
+</pre></td><td class="code"><pre><span class="line">欢迎来到[我的主页](https://the-awakend.github.io/)</span>
+<span class="line"></span>
+<span class="line">欢迎来到[我的主页](https://the-awakend.github.io/ &quot;他的个人主页&quot;)</span>
+</pre></td></tr></table></figure>
+<p>显示效果如下：</p>
+<p>欢迎来到<a href="https://the-awakend.github.io/" target="_blank" rel="noopener">我的主页</a></p>
+<p>欢迎来到<a href="https://the-awakend.github.io/" target="_blank" rel="noopener">我的主页</a></p>
+</li>
+<li><p>参考式:</p>
+<p>和图像插入的参考式一样，一般学术论文多用，在插入位置写[链接文字][标记字符]，在文末写</p>
+<p>[标记字符]:链接地址 “链接标题”，如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span>
+<span class="line">2</span>
+<span class="line">3</span>
+<span class="line">4</span>
+<span class="line">5</span>
+<span class="line">6</span>
+<span class="line">7</span>
+</pre></td><td class="code"><pre><span class="line">我常去的几个网站[GitHub][1]、[知乎][2]以及[简书][3]</span>
+<span class="line">......文本内容......</span>
+<span class="line">......文本内容......</span>
+<span class="line"></span>
+<span class="line">[1]:https://github.com &quot;GitHub&quot;</span>
+<span class="line">[2]:https://www.zhihu.com &quot;知乎&quot;</span>
+<span class="line">[3]:http://www.jianshu.com &quot;简书&quot;</span>
+</pre></td></tr></table></figure>
+<p>显示效果：</p>
+<p>我常去的几个网站[GitHub][1]、[知乎][2]以及简书[3]    </p>
+</li>
+</ul>
+<h4 id="自动链接"><a href="#自动链接" class="headerlink" title="自动链接"></a>自动链接</h4><p>Markdown 支持以比较简短的自动链接形式来处理网址和电子邮件信箱，只要是用&lt;&gt;;包起来， Markdown 就会自动把它转成链接。一般网址的链接文字就和链接地址一样，例如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span>
+<span class="line">2</span>
+</pre></td><td class="code"><pre><span class="line">&lt;http://example.com&gt;</span>
+<span class="line">&lt;address@example.com&gt;</span>
+</pre></td></tr></table></figure>
+<p>显示效果：</p>
+<p><a href="mailto:&#101;&#120;&#x61;&#109;&#x70;&#108;&#101;&#x40;&#x6f;&#117;&#x74;&#x6c;&#x6f;&#111;&#x6b;&#46;&#99;&#111;&#x6d;" target="_blank" rel="noopener">&#101;&#120;&#x61;&#109;&#x70;&#108;&#101;&#x40;&#x6f;&#117;&#x74;&#x6c;&#x6f;&#111;&#x6b;&#46;&#99;&#111;&#x6d;</a></p>
+<p><a href="http://example.com" target="_blank" rel="noopener">http://example.com</a></p>
+<h3 id="8、锚点"><a href="#8、锚点" class="headerlink" title="8、锚点"></a>8、锚点</h3><p>这和web王爷中的锚点是一样的性质，网页中，锚点其实就是页内超链接，也就是链接本文档内部的某些元素，实现当前页面中的跳转。比如我这里写下一个锚点，点击回到目录，就能跳转到目录。 在目录中点击这一节，就能跳过来。还有下一节的注脚。这些根本上都是用锚点来实现的。</p>
+<p>注意：Markdown Extra 只支持在标题后插入锚点，其它地方无效。</p>
+<p>语法描述:</p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/04/16/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/header1.jpg" alt="L...">
+            
+              <p class="site-author-name" itemprop="name">L...</p>
+              <div class="site-description motion-element" itemprop="description">用以记录随笔和学习总结</div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Markdown语法整理："><span class="nav-number">1.</span> <span class="nav-text">Markdown语法整理：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、标题-Headers"><span class="nav-number">1.1.</span> <span class="nav-text">1、标题 Headers</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、强调-Emphasis"><span class="nav-number">1.2.</span> <span class="nav-text">2、强调 Emphasis</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3、列表-List"><span class="nav-number">1.3.</span> <span class="nav-text">3、列表 List</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3、引用"><span class="nav-number">1.4.</span> <span class="nav-text">3、引用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4、代码块-code"><span class="nav-number">1.5.</span> <span class="nav-text">4、代码块 code</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5、分割线-horizontal-rules"><span class="nav-number">1.6.</span> <span class="nav-text">5、分割线 horizontal rules</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6、插入表格-table"><span class="nav-number">1.7.</span> <span class="nav-text">6、插入表格 table</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7、插入图像"><span class="nav-number">1.8.</span> <span class="nav-text">7、插入图像</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#另外关于图像插入："><span class="nav-number">1.8.1.</span> <span class="nav-text">另外关于图像插入：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7、插入超链接"><span class="nav-number">1.9.</span> <span class="nav-text">7、插入超链接</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#自动链接"><span class="nav-number">1.9.1.</span> <span class="nav-text">自动链接</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8、锚点"><span class="nav-number">1.10.</span> <span class="nav-text">8、锚点</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">L...</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.1.0</div>
+
+
+<div>
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<span id="busuanzi_container_site_pv" style="display:none">
+    本站总访问量 <span id="busuanzi_value_site_pv"></span> 次
+    <span class="post-meta-divider">|</span>
+</span>
+<span id="busuanzi_container_site_uv" style="display:none">
+    有<span id="busuanzi_value_site_uv"></span>人看过我的博客啦
+</span>
+</div>
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/utils.js?v=7.1.0"></script>
+
+  <script src="/js/motion.js?v=7.1.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/affix.js?v=7.1.0"></script>
+
+  <script src="/js/schemes/pisces.js?v=7.1.0"></script>
+
+
+
+
+  
+  <script src="/js/scrollspy.js?v=7.1.0"></script>
+<script src="/js/post-details.js?v=7.1.0"></script>
+
+
+
+  
+
+
+  <script src="/js/next-boot.js?v=7.1.0"></script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618},"display":{"superSample":2,"width":130,"height":270,"position":"right","hOffset":0,"vOffset":-20},"mobile":{"show":false},"react":{"opacityDefault":0.5,"opacityOnHover":0},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-04-16T09:25:13.254Z</updated>
+  <updated>2019-04-16T19:06:10.957Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,22 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Markdown语法整理</title>
+    <link href="http://yoursite.com/2019/04/17/first-blog/"/>
+    <id>http://yoursite.com/2019/04/17/first-blog/</id>
+    <published>2019-04-16T16:51:43.000Z</published>
+    <updated>2019-04-16T19:06:10.957Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Markdown语法整理：&quot;&gt;&lt;a href=&quot;#Markdown语法整理：&quot; class=&quot;headerlink&quot; title=&quot;Markdown语法整理：&quot;&gt;&lt;/a&gt;Markdown语法整理：&lt;/h2&gt;&lt;p&gt;Markdown是一门比html更简单的标记语言，其主要用于日常写作,最终通过相应的编辑器或者脚本转换成html用于页面渲染。
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
